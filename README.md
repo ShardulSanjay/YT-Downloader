@@ -33,7 +33,8 @@ A simple Chrome extension to download MP3 OR MP4 videos from YouTube directly wi
      "allowed_origins": ["chrome-extension://your-extension-id/"]
      For example, if your extension ID is kngnhogaplkemaannfbedggibcboakjb, the entry would be:
      "allowed_origins": ["chrome-extension://kngnhogaplkemaannfbedggibcboakjb/"]
-     Once you've updated the file, save the changes(Important). 
+     Once you've updated the file, save the changes(Important).
+   - Go to `chrome://extensions/` and reload the extension, the reload button is on the right of 'Errors' or 'Remove'.
 
 2. **Using the Extension**:
    - Click on the extension icon in your Chrome toolbar and pin it.
