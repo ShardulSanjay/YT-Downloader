@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension</title>
+    <link rel="stylesheet" href="./styles/popup.css">
+</head>
+<body>
+
+  <h1>YT Downloader</h1>
+  
+  <!-- Input for download location -->
+  <div>
+      <label for="location">Enter download location:</label><br>
+      <input type="text" id="location" placeholder="example: C:\music\rap">
+  </div><br>
+
+  <!-- Radio buttons for format selection (mp3 or mp4) -->
+  <label for="format" id="f">Choose file format:</label>
+  <div id="format">      
+      <label>
+          <input type="radio" id="mp3" name="format" value="mp3"> MP3
+      </label>
+      <label>
+          <input type="radio" id="mp4" name="format" value="mp4"> MP4
+      </label>
+  </div> 
+  <div>
+    <p>Choose Maximum Audio Quality:</p>
+    <form id="quality-form">
+        <label>
+            <input type="radio" name="audio" value="320" checked> 320kbps
+        </label>
+        <label>
+            <input type="radio" name="audio" value="256"> 256kbps
+        </label>
+        <label>
+            <input type="radio" name="audio" value="196"> 192kbps
+        </label>
+        <label>
+            <input type="radio" name="audio" value="128"> 128kbps
+        </label>
+    </form>
+</div>
+  <!-- Radio buttons for video quality selection -->
+  <div>
+      <p>Choose Maximum Video Quality:</p>
+      <form id="quality-form">
+          <label>
+              <input type="radio" name="quality" value="2160"> 2160p (4K)
+          </label>
+          <label>
+              <input type="radio" name="quality" value="1440"> 1440p (2K)
+          </label>
+          <label>
+              <input type="radio" name="quality" value="1080"> 1080p (Full HD)
+          </label>
+          <label>
+              <input type="radio" name="quality" value="720"> 720p (HD)
+          </label>
+          <label>
+              <input type="radio" name="quality" value="480"> 480p (SD)
+          </label>
+          <label>
+              <input type="radio" name="quality" value="360"> 360p (Low Quality)
+          </label>
+          <label>
+              <input type="radio" name="quality" value="144"> 144p (Minimal Quality)
+          </label>
+      </form>
+      <small>If the selected quality isn't available, the next best will be downloaded automatically.</small>
+  </div>
+
+  <script src="./scripts/popup.js"></script>
+</body>
+</html>

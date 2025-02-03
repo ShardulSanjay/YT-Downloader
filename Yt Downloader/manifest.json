@@ -1,0 +1,31 @@
+{
+    "name": "YT Downloader",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "Extension to Download Youtube videos as per saved settings in a single click using yt-dlp",
+    "permissions": ["storage", "tabs", "activeTab","webNavigation","nativeMessaging","scripting"],
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["./scripts/contentScript.js"],
+            "css": ["./styles/styles.css"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Yt Downloader",
+        "default_popup": "popup.html"
+    },
+    "icons":{
+        "16":"apps-16.png",
+        "32":"apps-32.png",
+        "48":"apps-48.png",
+        "128":"apps-128.png"
+    },  
+    "web_accessible_resources": [{
+        "resources": ["apps.png"],
+        "matches": ["*://www.youtube.com/*"]
+    }]  
+}

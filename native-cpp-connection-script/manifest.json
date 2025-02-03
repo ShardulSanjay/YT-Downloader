@@ -1,0 +1,7 @@
+{
+    "name": "com.connection.ytdlp",
+    "description": "Takes requests from chrome extension and executes yt-dlp commands",
+    "path": "C:\\native-cpp-connection-script\\cFile.exe",
+    "type": "stdio",
+    "allowed_origins": ["chrome-extension://kngnhogaplkemaannfbedggibcboakjb/"]
+}

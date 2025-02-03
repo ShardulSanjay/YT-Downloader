@@ -1,0 +1,6 @@
+#DownloadButton{
+    cursor: pointer;
+}
+#DownloadButton img{
+    max-width: 40px;
+}
